@@ -50,16 +50,16 @@ def apply_discount(price: float, discount: float) -> float:
         return ceil(cost / FACTOR, ROUND_1) - 0.01
 
 discount_codes = {
-    "B": 0.6,
-    "BY": 0.6 * 0.9,
-    "BYY": 0.6 * 0.9 * 0.9,
-    "B15": 0.6 * 0.85,
-    "B20": 0.6 * 0.8,
-    "B25": 0.6 * 0.75,
-    "B25+5": 0.6 * 0.75 * 0.95,
-    "A": 0.5,
-    "AY": 0.5 * 0.9,
-    "A20": 0.5 * 0.8,
+    "B":      0.6,
+    "BY":     0.6 * 0.9,
+    "BYY":    0.6 * 0.9 * 0.9,
+    "B15":    0.6 * 0.85,
+    "B20":    0.6 * 0.8,
+    "B25":    0.6 * 0.75,
+    "B25+5":  0.6 * 0.75 * 0.95,
+    "A":      0.5,
+    "AY":     0.5 * 0.9,
+    "A20":    0.5 * 0.8,
 }
 
 def calculate_cost(retail: float, discount: str = "A") -> float:
